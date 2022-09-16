@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/agree.png" type="image/jpeg" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <title>ABX-SDK</title>
+  <style>
+    .sidebar,
+    .sidebar ul li a {
+      font-size: 16px;
+    }
+    .sidebar {
+      top: 55px;
+    }
+
+    .app-nav.no-badge {
+      border-bottom: 1px solid rgba(60, 60, 60, .12);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      margin-top: 0;
+      padding-top: 25px;
+    }
+
+    .header {
+      margin: 0px 0 0 60px;
+      position: absolute;
+      top: 10px;
+    }
+
+    .header img {
+      width: 50px;
+      vertical-align: middle;
+    }
+
+    .header span {
+      padding-left: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="header">
+      <img src="img/agree.png" alt="">
+      <span>ABX-SDK</span>
+    </div>
+    <ul>
+      <li><a href="#/abx-ab4Entry">API</a></li>
+    </ul>
+  </nav>
+  <div id="app">加载中</div>
+  <script>
+    window.$docsify = {
+      // loadSidebar: true, // 从 _sidebar.md 文件加载侧边栏
+      // loadNavbar: "navbar.md", 
+      loadSidebar: 'ABX.md', // 从 ABX.md 加载侧边栏
+      subMaxLevel: 2, // 设置在侧边栏显示当前页面的目录
+      auto2top: true, // 当路由改变的时候滚动到页面顶部
+      notFoundPage: 'notFound.md', // 404 not found 页面
+      coverpage: { '/': 'cover.md', }, // 封面 
+      onlyCover: true,
+      mergeNavbar: true, // 在屏幕较小时合并导航栏
+      alias: {
+        "/abx-ab4Entry": "md/abx-ab4-Entry.md",
+        "/abx-channel": "md/abx-channel.md",
+        "/abx-core-log": "md/abx-core-log.md",
+        "/abx-layer": "md/abx-layer.md",
+        "/abx-logger": "md/abx-logger.md",
+        "/abx-manager-eventbus": "md/abx-manager-eventbus.md",
+        "/abx-manager-http": "md/abx-manager-http.md",
+        "/abx-manager-watermark": "md/abx-manager-watermark.md",
+        "/abx-manager-websocket": "md/abx-manager-websocket.md",
+        "/abx-plugin-embed": "md/abx-plugin-embed.md", // --
+        "/abx-plugin-entry": "md/abx-plugin-entry.md",
+        "/abx-plugin-file": "md/abx-plugin-file.md",
+        "/abx-plugin-keyboard": "md/abx-plugin-keyboard.md",
+        "/abx-plugin-video": "md/abx-plugin-video.md",
+        "/abx-plugin-watermark": "md/abx-plugin-watermark.md", 
+        // "/abx-ab4Entry": "http://localhost:3000/packages/abx-ab4-Entry/README.md",
+        // "/abx-channel": "http://localhost:3000/packages/abx-channel/README.md",
+        // "/abx-core-log": "http://localhost:3000/packages/abx-core-log/README.md",
+        // "/abx-layer": "http://localhost:3000/packages/abx-layer/README.md",
+        // "/abx-logger": "http://localhost:3000/packages/abx-logger/README.md",
+        // "/abx-manager-eventbus": "http://localhost:3000/packages/abx-manager-eventbus/README.md",
+        // "/abx-manager-http": "http://localhost:3000/packages/abx-manager-http/README.md",
+        // "/abx-manager-watermark": "http://localhost:3000/packages/abx-manager-watermark/README.md",
+        // "/abx-manager-websocket": "http://localhost:3000/packages/abx-manager-websocket/README.md",
+        // "/abx-plugin-embed": "http://localhost:3000/packages/abx-plugin-embed/README.md", // --
+        // "/abx-plugin-entry": "http://localhost:3000/packages/abx-plugin-entry/README.md",
+        // "/abx-plugin-file": "http://localhost:3000/packages/abx-plugin-file/README.md",
+        // "/abx-plugin-keyboard": "http://localhost:3000/packages/abx-plugin-keyboard/README.md",
+        // "/abx-plugin-video": "http://localhost:3000/packages/abx-plugin-video/README.md",
+        // "/abx-plugin-watermark": "http://localhost:3000/packages/abx-plugin-watermark/README.md", // --
+      },
+      search: {
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 3,
+      },
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+</body>
+
+</html>
